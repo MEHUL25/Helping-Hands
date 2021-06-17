@@ -1,0 +1,60 @@
+<%- include('includes/head.ejs') %>
+
+
+
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+
+    <!-- Cart view section -->
+ <section id="aa-myaccount">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+       <div class="aa-myaccount-area">
+           <div class="row">
+             <div class="col-md-6">
+               <div class="aa-myaccount-login">
+               <h4>Login</h4>
+                <form action="/login/log" method="POST" class="aa-login-form">
+                 <label for="">Username<span>*</span></label>
+                  <input id="username" name="username" type="text" placeholder="Username">
+                  
+                  <label for="">Password<span>*</span></label>
+                   <input id="password" name="password" type="password" placeholder="Password">
+                  
+                   <button type="submit" class="aa-browse-btn">Login</button>
+                 </form>
+               </div>
+             </div>
+             <div class="col-md-6">
+               <div class="aa-myaccount-register">
+                <h4>Register</h4>
+                <form action="/login/add-user" method="POST" class="aa-login-form">
+                   <label for="">Username<span>*</span></label>
+                   <input id="username" name="username" type="text" placeholder="Username">
+
+                   <label for="">Email address<span>*</span></label><br>
+                   <input id="email" name="email" type="text" placeholder="Email">
+
+                   <label for="">Name<span>*</span></label>
+                   <input id="name" name="name" type="text" placeholder="Name">
+
+                   <label for="">Password<span>*</span></label>
+                   <input id="password" name="password" type="password" placeholder="Password">
+                   
+                   <button type="submit" class="aa-browse-btn">Register</button>
+                 </form>
+               </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / Cart view section -->
+
+
+<%- include('includes/end.ejs') %>

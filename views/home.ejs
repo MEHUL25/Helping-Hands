@@ -1,0 +1,128 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    
+  </head>
+
+  <body>
+    <%- include('includes/navigation.ejs') %>
+
+      <!-- Start slider -->
+  <section id="aa-slider">
+    <div class="aa-slider-area">
+      <div id="sequence" class="seq">
+        <div class="seq-screen">
+          <ul class="seq-canvas">
+            <!-- single slide item -->
+            <li>
+              <div class="seq-model">
+                <img data-seq  />
+              </div>
+              <div class="seq-title">
+               <span data-seq>Save a life, Feed a needy.</span>
+                <h2 data-seq>We rise by lifting others </h2>
+                <p data-seq style="color: black">Education and awareness are the first steps to understanding and solving any issue — and world hunger is no different. Growing the Movement is a pillar of our strategy to end hunger, and we need your help! Please use your social network for social good by sharing a fact or quote below to shed light and inspire action. By spreading the word, you’ll help us reach a whole new audience of Hunger Champions.</p>
+
+              </div>
+            </li>
+
+            <!-- single slide item -->
+            <li>
+              <div class="seq-model">
+                <img data-seq />
+              </div>
+              <div class="seq-title">
+                <span data-seq>Save a life, Feed a needy.</span>
+                <h2 data-seq>If you can’t feed a hundred people, then feed just one</h2>
+                <p data-seq style="color: black">The war against hunger is truly mankind’s war of liberation</p>
+
+              </div>
+            </li>
+            <!-- single slide item -->
+            <li>
+              <div class="seq-model">
+                <img data-seq  />
+              </div>
+              <div class="seq-title">
+                <span data-seq>Save a life, Feed a needy.</span>
+                <h2 data-seq>You can help beat hunger!</h2>
+                <p data-seq style="color: black">Donating to the needy is a great way to improve the conditions in your neighborhood or community. Donating food to the worthy people or organizations helps counter poverty, hunger and at the same time, it can improve harmony, friendliness, and trust among residents.</p>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <!-- slider navigation btn -->
+        <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+          <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+          <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+  <!-- / slider -->
+
+  <br><br><br>
+
+  <!-- Modal -->
+  <% if (modal > 0) { %>
+    <div id="success_tic" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <a class="close" href="#" data-dismiss="modal">&times;</a>
+                <div class="page-body">
+                    <div class="head">  
+                        <h3 style="margin-top:5px;">Post Added Successfully</h3>
+                    </div>
+                    <h1 style="text-align:center;"><div class="checkmark-circle">
+                        <div class="background"></div>
+                        <div class="checkmark draw"></div>
+                    </div><h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% } %>
+
+  <!-- Support section -->
+  <section id="aa-support">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-support-area">
+            <!-- single support -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="aa-support-single">
+                <span class="fa fa-truck"></span>
+                <h4>FREE SHIPPING</h4>
+                <P>We offer a free delivery for needy</P>
+              </div>
+            </div>
+            <!-- single support -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="aa-support-single">
+                <span class="fa fa-clock-o"></span>
+                <h4>Why us. </h4>
+                <P>If you can't feed a hundred people, then feed just one.</P>
+              </div>
+            </div>
+            <!-- single support -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="aa-support-single">
+                <span class="fa fa-phone"></span>
+                <h4>SUPPORT 24/7</h4>
+                <P>Our service is always with you.</P>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Support section -->
+
+  <br><br><br>
+
+  
+<%- include('includes/end.ejs') %>

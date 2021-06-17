@@ -1,0 +1,87 @@
+<%- include('includes/head.ejs') %>
+
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/table.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <main>
+
+        <% if (postsArray.length > 0) { %>
+            <div class="grid">
+                <% for (let post of postsArray) { %>
+
+                    <br><br><br>
+                    <!--===== CONTAINER =====-->
+
+                            <div class="container mt-5">
+                                <div style="max-width:100%" class="row m-0 table-heading">
+
+                                <div class="col-sm-4 mt-2">
+                                    <p class="text-center">ID- <%= post.postId%></p>
+                                </div>
+                                <div class="col-sm-4 mt-2">
+                                    <p class="text-center">City- <%= post.city%></p>
+                                </div>
+                                </div>
+
+
+                                <table  class="table table-bordered">
+
+                                <tbody>
+
+
+                                    <tr class="table table-row">
+                                    <td colspan="2">
+                                        <p class="text-left ">Type- <%= post.type%></p>
+                                    </td>
+                                    </tr>
+                                    <tr class="table table-row">
+                                    <td>
+                                        <p class="text-left ">Name- <%= post.name%></p>
+                                    </td>
+                                    <td>
+                                        <p class="text-left">Contact Number - <%= post.contact%></p>
+                                    </td>
+
+                                    </tr>
+                                    <tr class="table table-row">
+                                    <td colspan="2">
+                                        <p class="text-left">Address - <%= post.address%></p>
+                                    </td>
+                                    </tr>
+                                    <tr class="table table-row">
+                                    <td colspan="2">
+                                        <p class="text-left ">Description - <%= post.description%></p>
+                                    </td>
+                                    </tr>
+                                    <tr class="table table-row">
+                                    <td>
+                                        <p class="text-left">Added By- <%= post.author%></p>
+                                    </td>
+                                    <td>
+                                        <p class="text-left ">Date Added - <%= post.tdate%></p>
+                                    </td>
+                                    </tr>
+                                    <tr class="table table-row">
+                                    <td colspan="2">
+                                        <p class="text-center text-success">Availability Status (Is Available?)- <%= post.status%></p>
+                                    </td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                            <!--===== END OF CONTAINER =====-->
+                            <br><br>
+
+
+                <% } %>
+            </div>
+        <% } else { %>
+            <h1 style="height:30vh; margin:0;padding:30vh;text-align: center;">No Posts Found!</h1>
+        <% } %>
+    </main>
+<%- include('includes/end.ejs') %>

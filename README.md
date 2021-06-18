@@ -71,6 +71,11 @@ The actors, who are in need of excess food, such as NGOs or farmers, will search
 
 The interested entities will contact the owners, if their requirements are fulfilled. Further, they will issue the Food, and distribute them accordingly.
 
+# Conclusion:
+
+This system, would in turn help address the problem of hunger and malnutrition, and increase agricultural productivity which 
+would ensure a safe, sustainable, and sufficient food supply throughout the year.
+
 ## Project roadmap
 
 The project currently does the following things.

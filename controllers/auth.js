@@ -20,7 +20,7 @@ exports.postAddUser = (req, res, next) => {
             .save()
             .then(result => {
                 res.render('home', {
-                  pageTitle: 'Home',modal:1,
+                  pageTitle: 'Home',modal:1,path:"/",
                   isAuthenticated: req.session.isLoggedIn
                 });
             })

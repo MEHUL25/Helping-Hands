@@ -32,7 +32,7 @@ exports.postAddPost = (req, res, next) => {
       .save()
       .then(result => {
           res.render('home', {
-            pageTitle: 'Home',modal:1,
+            pageTitle: 'Home',modal:1,path:"/",
             isAuthenticated: req.session.isLoggedIn
           });
       })
@@ -87,7 +87,7 @@ exports.postDeletePost = (req, res, next) => {
   .then(result =>
     {
         res.render('home', {
-          pageTitle: 'Home',modal:2,
+          pageTitle: 'Home',modal:2,path:"/",
           isAuthenticated: req.session.isLoggedIn
         });
     })
@@ -131,7 +131,7 @@ exports.postEditPost = (req, res, next) => {
     .then(result =>
     {
         res.render('home', {
-          pageTitle: 'Home',modal:1,
+          pageTitle: 'Home',modal:1,path:"/",
           isAuthenticated: req.session.isLoggedIn
         });
     })

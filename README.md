@@ -37,7 +37,8 @@ It's vital to eradicate hunger and provide resources for cattle feeding. The sys
 
 ## Demo video
 
-(https://www.youtube.com/watch?v=Yx0F34x_s7I "Youtube Video")
+[![Feeding hands](https://drive.google.com/file/d/16b9OuAb2ktV1WP5BPiZM_dBwJ56f4SCM/view?usp=sharing)]
+(https://www.youtube.com/watch?v=4ioNwC604RQ "Feeding hands")
 
 ## The architecture
 
